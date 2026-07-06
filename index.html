@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roue des Cadeaux - Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Merci pour votre avis Google ! ✨</h1>
+        <p class="subtitle">Tentez votre chance pour gagner un cadeau exclusif</p>
+
+        <div class="wheel-box">
+            <div class="pointer"></div>
+            <div class="wheel" id="wheel">
+                <!-- 8 sections alternées (4 gagnants / 4 perdants) -->
+                <div class="segment" style="--i:1; --bg:#222; --text:#fff;"><span>DÉSOLÉ</span></div>
+                <div class="segment" style="--i:2; --bg:#d4af37; --text:#000;"><span>-10%</span></div>
+                <div class="segment" style="--i:3; --bg:#222; --text:#fff;"><span>PAS CE SOIR</span></div>
+                <div class="segment" style="--i:4; --bg:#d4af37; --text:#000;"><span>SOIN AVEDA</span></div>
+                <div class="segment" style="--i:5; --bg:#222; --text:#fff;"><span>PERDU</span></div>
+                <div class="segment" style="--i:6; --bg:#d4af37; --text:#000;"><span>SCHWARZKOPF</span></div>
+                <div class="segment" style="--i:7; --bg:#222; --text:#fff;"><span>PLUS TARD</span></div>
+                <div class="segment" style="--i:8; --bg:#d4af37; --text:#000;"><span>SOIN PROFOND</span></div>
+            </div>
+            <button class="spin-btn" onclick="spin()">LANCER</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
